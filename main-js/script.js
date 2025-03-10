@@ -46,8 +46,13 @@ Bonus
 
 const parentElement = document.querySelector(".team-container");
 const formElement = document.getElementById("my-form")
-
 // console.log(parentElement);
+const nameElement = document.getElementById("name");
+const roleElement = document.getElementById("role");
+const emailElement = document.getElementById("email");
+const imgElement = document.getElementById("img");
+
+
 
 let result = ""
 
@@ -62,26 +67,42 @@ for (let i = 0; i < teamMembers.length; i++){
                     <div class="info">
                         <h3>${resultParent.name}</h3>
                         <p>${resultParent.role}</p>
-                        <p class="email">${resultParent.email}/p>
+                        <p class="email">${resultParent.email}</p>
                     </div>
                 </div>`
 }
 parentElement.innerHTML = result;
 
-/*
-function formElement(event){
+formElement.addEventListener("submit", function (e){
+  e.preventDefault();
+ // console.log("ho aggiunto un nuovo membro");
+ // console.log(nameElement.value)
+ //console.log(roleElement.value)
+ //console.log(emailElement.value)
+ //console.log(imgElement.value);
+ const name = nameElement.value;
+ const role = roleElement.value;
+ const email = emailElement.value;
+ const img = imgElement.value;
 
-  event.preventDefault();
-  
-  const newElementForm = {
-    img,
-    name,
-    role,
-    email
-  }
+ const newMember = {
+  name,
+  role,
+  email,
+  img
+ }
+ teamMembers.push(newMember);
+ console.log(teamMembers);
+ result += ` <div class="team-member">
+ <img src="${img}" alt="${name}">
+ <div class="info">
+     <h3>${name}</h3>
+     <p>${role}</p>
+     <p class="email">${email}</p>
+ </div>
+</div>`
 
-  teamMembers.push(newElementForm);
-  
+parentElement.innerHTML = result;
+formElement.reset()
 
-}
-*/
+});

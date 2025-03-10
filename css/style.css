@@ -5,6 +5,10 @@
     box-sizing: border-box;
 } 
 
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 
 h1 {
     color: #e53170;
@@ -80,4 +84,11 @@ h1 {
 
 .email {
     color: #00aaff;
+}
+
+.btn {
+    width: 100px;
+    color: white;
+    background-color: #00aaff;
+    padding: 10px;
 }
