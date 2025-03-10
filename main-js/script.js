@@ -45,7 +45,7 @@ Bonus
 
 
 const parentElement = document.querySelector(".team-container");
-
+const formElement = document.getElementById("my-form")
 
 // console.log(parentElement);
 
@@ -65,7 +65,23 @@ for (let i = 0; i < teamMembers.length; i++){
                         <p class="email">${resultParent.email}/p>
                     </div>
                 </div>`
- 
 }
-parentElement.innerHTML += result;
+parentElement.innerHTML = result;
 
+/*
+function formElement(event){
+
+  event.preventDefault();
+  
+  const newElementForm = {
+    img,
+    name,
+    role,
+    email
+  }
+
+  teamMembers.push(newElementForm);
+  
+
+}
+*/
