@@ -52,8 +52,6 @@ const roleElement = document.getElementById("role");
 const emailElement = document.getElementById("email");
 const imgElement = document.getElementById("img");
 
-
-
 let result = ""
 
 let resultParent = " "
