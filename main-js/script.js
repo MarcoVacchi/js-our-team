@@ -61,12 +61,11 @@ for (let i = 0; i < teamMembers.length; i++){
                     <img src="${resultParent.img}" alt="">
                     <div class="info">
                         <h3>${resultParent.name}</h3>
-                        <p>${resultParent.role}Designer</p>
-                        <p class="email">${resultParent.email}marcobianchi@team.com</p>
+                        <p>${resultParent.role}</p>
+                        <p class="email">${resultParent.email}/p>
                     </div>
                 </div>`
  
-  
 }
 parentElement.innerHTML += result;
 
