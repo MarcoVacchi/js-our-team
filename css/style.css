@@ -19,6 +19,65 @@ h1 {
 }
 
 .container-text {
-    width: 1400px;
     text-align: center;
+    width: 80%;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    color: #e91e63;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.team-member {
+    display: flex;
+    background: black;
+    color: white;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    width: 470px;
+}
+
+.team-member img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.info h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.info p {
+    font-size: 14px;
+    margin: 2px 0;
+}
+
+.email {
+    color: #00aaff;
 }
