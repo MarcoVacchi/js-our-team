@@ -1,0 +1,24 @@
+/*reset*/
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+
+h1 {
+    color: #e53170;
+    font-size: 40px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.f-s-20 {
+    font-size: 25px;
+}
+
+.container-text {
+    width: 1400px;
+    text-align: center;
+}
